@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+svg{
+  background-color: red;
+  width: 700px;
+  height: 500px;
+
+}
+
+.country{
+  fill: azure;
+  stroke: black;
+  stroke-width: 0.5;
+}
+
+.country:hover{
+  fill: chocolate;
+  cursor: pointer;
+}
