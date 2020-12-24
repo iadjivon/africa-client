@@ -20,7 +20,7 @@ const Form = (props) => {
       <input
         type="text"
         name="name"
-        value={formData.name}
+        value={formData.recipeInfo.name}
         onChange={handleChange}
       />
       <input

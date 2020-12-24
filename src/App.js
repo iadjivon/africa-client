@@ -18,16 +18,19 @@ const [recipes, setRecipes] = React.useState([])
 
 // Empty Recipes
 
-const emptyRecipe = {
-  name: "",
-  cookTime: 0,
-  description: "",
-  servingSize: 0,
-  ingredients: "",
-  instructions: "", 
-  recipesCompleted: Boolean
-
-}
+const emptyRecipe = ({
+  countryName: "",
+  recipeInfo: {
+    name: "",
+    cookTime: 0,
+    description: "",
+    servingSize: 0,
+    ingredients: "",
+    instructions: "", 
+    recipesCompleted: Boolean
+  }
+  
+})
 
 // selected state, this will represent the edited recipe
 const [selectedRecipe, setSelectedRecipe] = React.useState(emptyRecipe)
@@ -94,10 +97,12 @@ const handleUpdate = (recipe)=>{
   <Link to="/">
         <button>Home </button>
   </Link>
-  <Link to="/recipe">
+  <Link to="/recipes">
         <button>Explore Recipes </button>
   </Link>
-
+  <Link to="/create">
+        <button>Add New Recipes </button>
+  </Link>
 
   <main> 
   <Switch>
@@ -112,6 +117,7 @@ const handleUpdate = (recipe)=>{
               {...rp} recipes= {recipes} 
               deleteRecipe={deleteRecipe}
                  />
+                 
             )}
           />  
 
@@ -119,7 +125,7 @@ const handleUpdate = (recipe)=>{
             exact
             path="/create"
             render={(rp) => (
-              <Form {...rp} label="create" dog={{emptyRecipe}} handleSubmit={handleCreate} />
+              <Form {...rp} label="create" recipe={emptyRecipe} handleSubmit={handleCreate} />
             )}
           />
 
