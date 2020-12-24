@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Recipe = (props) =>{
+const Display = (props) =>{
     const {recipes} = props
 
     const loaded = () =>(
@@ -19,13 +19,16 @@ const Recipe = (props) =>{
       
               <button onClick={()=>{props.deleteRecipe(recipe);
             }}> Delete </button>
+            <hr />
             </article>))}
         </div>
+     
       )
-
       const loading = <h1> Loading ... </h1>
 
     return recipes.length > 0 ? loaded() : loading
+    
+
 };
 
-export default Recipe;
+export default Display;

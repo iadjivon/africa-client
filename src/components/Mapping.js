@@ -6,7 +6,7 @@ import * as d3 from 'd3'
 
 
 
-const Display = ({data, property}) =>{
+const Map = ({data, property}) =>{
 
     const svgRef = useRef();
     // const wrapperRef = useRef();
@@ -67,4 +67,4 @@ return (
     
 }
 
-export default Display;
+export default Map;
