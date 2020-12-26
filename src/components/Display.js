@@ -7,12 +7,14 @@ const Display = (props) =>{
         <div style={{textAlign: "center"}}>
           {recipes.map((recipe) =>(
             <article>
-              <h1>{recipe.name}</h1>
-              <h3>{recipe.servingSize}</h3>
-              <h3>{recipe.description}</h3>
-              <h3>{recipe.cookTime}</h3>
+              <h1>{recipe.countryName}</h1>
+              <h3>{recipe.recipeName}</h3>
+              <h3>{recipe.servingSize} Serving(s)</h3>
+              <img src={recipe.image}></img>
+              <p>{recipe.description}</p>
+              <h3>{recipe.cookTime} minutes</h3>
               <h3>{recipe.ingredients}</h3>
-              <h3>{recipe.instructions}</h3>
+              <p>{recipe.instructions}</p>
 
               <button onClick={()=>{props.selectRecipe(recipe);
               props.history.push("/edit")}}> Edit</button>

@@ -20,15 +20,15 @@ const [recipes, setRecipes] = React.useState([])
 
 const emptyRecipe = ({
   countryName: "",
-  recipeInfo: {
-    name: "",
+  recipeInfo: [{
+    recipeName: "",
     cookTime: 0,
     description: "",
     servingSize: 0,
     ingredients: "",
     instructions: "", 
     recipesCompleted: Boolean
-  }
+  }]
   
 })
 
@@ -92,8 +92,11 @@ const handleUpdate = (recipe)=>{
 
   return (
   <div>
+
+{/* THIS IS THE HEADER FOR ALL PAGES */}
+  <header> 
   <h1> African Recipes </h1>
-  <hr />
+ 
   <Link to="/">
         <button>Home </button>
   </Link>
@@ -103,12 +106,14 @@ const handleUpdate = (recipe)=>{
   <Link to="/create">
         <button>Add New Recipes </button>
   </Link>
+  <hr />
+  </header>
+
 
   <main> 
   <Switch>
         <Route exact path ="/" render={ () => 
           <Map data={data} property={property}/> }/>
-
         <Route
             exact
             path="/recipes"
@@ -141,7 +146,22 @@ const handleUpdate = (recipe)=>{
 
 
 </Switch>
-      </main>
+
+{/*  THIS IS THE SECOND DIV ON THE MAIN PAGE. RIGHT UNDER THE MAP */}
+
+<div>
+<h1> this is the second div</h1>
+
+
+</div>
+      
+           
+</main>
+
+{/* THIS IS THE FOOTER SECTION */}
+<footer>
+  <h2> this is the footer</h2>
+</footer>
 
 </div>)
   
