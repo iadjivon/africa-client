@@ -41,22 +41,134 @@
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
-/* ------------------------------------------------- */
+
+
+/* -------------MAP--------------- */
 
 svg{
-  background-color: red;
-  width: 700px;
-  height: 500px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 800px;
+  background-image: url("https://www.spicemountain.co.uk/wp-content/uploads/2019/10/general_544923805.jpg");
+  background-repeat: none;
+  background-size: cover;
 
 }
 
 .country{
   fill: azure;
   stroke: black;
+  
+  margin-left: 10px;
+
   stroke-width: 0.5;
+  background-color: rgb(228, 226, 226);
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
 }
 
 .country:hover{
   fill: chocolate;
   cursor: pointer;
+}
+
+
+.map{
+  background-image: url("");
+  margin-top: 7px;
+  /* padding-left: 50px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* -------------MAIN PAGE- DIV 2 - ACCORDION--------------- */
+.MuiPaper-root{
+ width: 60%;
+ margin: 5px;
+ margin-left: 2%;
+ display: flex;
+ flex-direction:column ;
+
+}
+
+.MuiAccordionDetails-root{
+  display: flex;
+  flex-direction:column ;
+}
+
+ .WesResOne{
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: #fdf8db;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  
+
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-top: 20px;
+  border: 3px solid black;
+  width: 100%px;
+ 
+  padding-left: 7px;
+  padding-right: 7px;
+
+} 
+
+.MuiCollapse-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.accordion-div{
+  background-image: url("https://cdn.minnesotamonthly.com/wp-content/uploads/sites/85/2019/06/mm-2019-07_GlobalTaste_UnionKitchen2_X.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+/* https://traveler.marriott.com/wp-content/uploads/2020/09/GI-904614534-AfricanFoodCulture.jpg */
+
+
+.footer{
+  background-image: url("https://www.spicemountain.co.uk/wp-content/uploads/2019/10/general_544923805.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-page{
+  display:flex;
+  flex-direction: row;
+  flex: 1 2 auto
+}
+
+
+
+.footerh1{
+  /* padding: 0px; */
+  margin-top: 8px;
+  margin-bottom: 0px;
+  /* margin: 0px; */
+}
+
+.main-h1 h1{
+  padding: 5px;
+}
+
+.main-h1 img{
+  display:flex;
+  margin-left: 10px;
 }

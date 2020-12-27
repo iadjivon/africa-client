@@ -5,6 +5,9 @@ import './App.css';
 import { Route, Link, Switch } from "react-router-dom";
 import Display from './components/Display';
 import Form from './components/Form';
+import Accordion from './components/Accordion'
+
+// const decoratedOnClick = useAccordionToggle(eventKey, onClick);
 
 
 function App() {
@@ -113,7 +116,11 @@ const handleUpdate = (recipe)=>{
   <main> 
   <Switch>
         <Route exact path ="/" render={ () => 
-          <Map data={data} property={property}/> }/>
+          <Map data={data} property={property}/> 
+           }/>
+
+           <Route exact path ="/" render ={ ()=> <Accordion />} />
+
         <Route
             exact
             path="/recipes"
@@ -144,23 +151,29 @@ const handleUpdate = (recipe)=>{
             )}
           />
 
-
 </Switch>
+
+
+
 
 {/*  THIS IS THE SECOND DIV ON THE MAIN PAGE. RIGHT UNDER THE MAP */}
 
-<div>
-<h1> this is the second div</h1>
+{/* <div> */}
+{/* <h1> Recipes from across the continent </h1> */}
+
+{/* <Accordion /> */}
 
 
-</div>
+{/* </div> */}
       
            
 </main>
 
 {/* THIS IS THE FOOTER SECTION */}
-<footer>
-  <h2> this is the footer</h2>
+<footer className="footer">
+  <h1 className="footerh1"> this is a footer</h1>
+  <h1> this is a footer</h1>
+  <h1> this is a footer</h1>
 </footer>
 
 </div>)

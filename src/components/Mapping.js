@@ -3,6 +3,7 @@ import {select, geoPath, geoMercator, path, svg }from 'd3'
 
 import data from './africa.geo.json'
 import * as d3 from 'd3'
+import Accordion from "./Accordion"
 
 
 
@@ -11,21 +12,20 @@ const Map = ({data, property}) =>{
     const svgRef = useRef();
     // const wrapperRef = useRef();
 
-    const width = 500;
-    const height = 500;
+    const width = 800;
+    const height = 700;
 
     const [selectedCountry, setSelectedCountry] = useState(null);
     
 const features = 
 
 
-
 useEffect(() => {
     const svg = select(svgRef.current);
     const projection = geoMercator()
-    // .scale(400)
+    .scale(400)
     // .center("center")
-    // .translate([width/2, height/5])
+    .translate([width/10, height/5])
     .fitSize([height, width], 
         selectedCountry || data)
     .precision(100);
@@ -59,9 +59,24 @@ svg.selectAll(".label")
 
 
 return (
-<div class ="map" style={{ padding: "2rem" }}>
+<div class ="map"> 
+    <div class ="map" style={{ padding: "" }}>
     <svg ref={svgRef}></svg>
+    </div>
+    
+<div className="main-page">
+    <div className="main-h1">
+        <h1> Recipes from across the continent </h1>
+        <img src="https://www.pikpng.com/pngl/b/181-1810057_wooden-spoon-png-wood-spoon-top-png-clipart.png" width="40px" height ="175px"/>
+    </div>
+
+    <div>
+        <Accordion />
+    </div>
 </div>
+    
+</div>
+
 
 )
     

@@ -1,4 +1,6 @@
 import React from 'react';
+import Accordion from 'react-bootstrap/Accordion'
+import Card from 'react-bootstrap/Card'
 
 const Display = (props) =>{
     const {recipes} = props
@@ -6,7 +8,8 @@ const Display = (props) =>{
     const loaded = () =>(
         <div style={{textAlign: "center"}}>
           {recipes.map((recipe) =>(
-            <article>
+            <div>
+              
               <h1>{recipe.countryName}</h1>
               <h3>{recipe.recipeName}</h3>
               <h3>{recipe.servingSize} Serving(s)</h3>
@@ -15,14 +18,16 @@ const Display = (props) =>{
               <h3>{recipe.cookTime} minutes</h3>
               <h3>{recipe.ingredients}</h3>
               <p>{recipe.instructions}</p>
-
+             
               <button onClick={()=>{props.selectRecipe(recipe);
               props.history.push("/edit")}}> Edit</button>
       
               <button onClick={()=>{props.deleteRecipe(recipe);
             }}> Delete </button>
             <hr />
-            </article>))}
+
+
+            </div>))}
         </div>
      
       )
