@@ -169,12 +169,12 @@ const handleUpdate = (recipe)=>{
 
   <div className="footer2">
   <h1 className="footerh1"> Contacts</h1>
-  <h5> LinkedIn</h5>
-  <h5> Github</h5>
+  <h5> <a href="https://www.linkedin.com/in/ida-adjivon/"> LinkedIn</a></h5>
+  <h5> <a href="https://github.com/iadjivon"> Github </a> </h5>
   </div>
 
   <div className="footer3">
-  <h1 className="footerh1"> Github</h1>
+  <img src="https://www.clipartkey.com/mpngs/m/175-1750487_fork-knife-spoon-png-icon-knife-and-fork.png" width="120" height="auto"/> 
   </div>
 </footer>
 

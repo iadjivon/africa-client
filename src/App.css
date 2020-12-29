@@ -352,7 +352,7 @@ hr{
 
 /* ----------MAIN PAGE- DIV 4 - FOOD DISPLAY ------------ */
 .input-div{
-  background-image: url("https://1.bp.blogspot.com/-UEwyuaaZowA/XGyUsJC80WI/AAAAAAABdTI/65vhRhh1_gw_2GggRKW1sVFTbt4EaTGVACLcBGAs/s1600/sq--peanut-chickpeas-african-recipes---IMG_9092.png");
+  background-image: url("https://lionelhitchen.com/wp-content/uploads/2017/06/dreamstime_s_136692172-African-food.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -406,17 +406,19 @@ hr{
 }
 
 .recipe{
-  margin: 30px;
+  margin: 20px;
   width: 250px;
   font-size: 25px;
   border: 1px solid black;
+  
 
 }
 
 .descriptions{
-  width: 75%;
+  width: 70%;
  
 }
+
 
 .ingredients{
   width: 75%;
@@ -434,7 +436,7 @@ hr{
 
 .bttns{
   display: flex;
-  
+
 }
 
 /* --------------------- FOOTER ------------------------- */

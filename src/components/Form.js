@@ -83,6 +83,11 @@ const Form = (props) => {
         value={formData.instructions}
         onChange={handleChange}
       />
+      <input
+        type="checkbox"
+        name="recipeCompleted"
+        value={formData.recipeCompleted}
+      />
       <input className="submit-btn" type="submit" value={props.label} />
     </form>
     </div>

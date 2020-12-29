@@ -10,42 +10,35 @@ const Display = (props) =>{
           {recipes.map((recipe) =>(
             <div className="recipe-display">
 
-              <div className="recipe"> 
-              <h3>{recipe.countryName}</h3>
-              </div>
-
-              <div className="recipe"> 
-              <h3>{recipe.recipeName}</h3>
-              </div>
-
-              <div className="recipe"> 
-              <h3>{recipe.servingSize} Serving(s)</h3>
-              </div>
-
-              <div className="recipe"> 
-              <h3>{recipe.cookTime} minutes</h3>
-              </div>
-
-
-
-              <div className="descriptions">     
-              <p>{recipe.description}</p>
-              </div>
-
-    
-              <div className="image"> 
+<div className="image"> 
               <img src={recipe.image}></img>
               </div>
+              <div className="recipe"> 
+              <h3>Country Name: </h3> <h3>{recipe.countryName}</h3>
+              </div>
 
-              
+              <div className="recipe"> 
+              <h3> Recipe Name: </h3> <h3>{recipe.recipeName}</h3>
+              </div>
 
+              <div className="recipe"> 
+              <h3> Serving Size: </h3> <h3>{recipe.servingSize} Serving(s)</h3>
+              </div>
+
+              <div className="recipe"> 
+              <h3> Cook Time: </h3> <h3>{recipe.cookTime} minutes</h3>
+              </div>
               <div className="ingredients"> 
-              <h3>{recipe.ingredients}</h3>
+              <h1>Recipe Ingredients:</h1> <p> {recipe.ingredients}</p>
+              </div>
+
+              <div className="descriptions">     
+              <h1> Description: </h1> <p>{recipe.description}</p>
               </div>
 
 
               <div className="instructions"> 
-              <p>{recipe.instructions}</p>
+              <h1> Recipe Instructions: </h1> <p> {recipe.instructions}</p> 
               </div>
 
               
