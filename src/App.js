@@ -14,7 +14,7 @@ import Accordion from './components/Accordion'
 function App() {
 
 //Variable to hold url 
-   const url = "http://localhost:3000"
+   const url = "https://afri-recipes.herokuapp.com"
   const [property, setProperty] = React.useState([]);
 
 // state to hold recipes 
