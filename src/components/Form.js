@@ -16,10 +16,12 @@ const Form = (props) => {
   };
 
   return (
+    <div className="input-div"> 
     <form onSubmit={handleSubmit}>
        <input
         type="text"
         name="countryName"
+        className="input"
         placeholder= "Name of the Country"
         value={formData.countryName}
         onChange={handleChange}
@@ -27,14 +29,16 @@ const Form = (props) => {
       <input
         type="text"
         name="recipeName"
+        className="input"
         placeholder= "Name of the recipe"
         value={formData.recipeName}
         onChange={handleChange}
       />
       
       <input
-        type = "text"
+        type = "url"
         src = {formData.image}
+        className="input"
         placeholder= "Link to image"
         width= "250"
         height= "300"/>
@@ -42,13 +46,15 @@ const Form = (props) => {
       <input
         type="number"
         name="servingSize"
+        className="input"
         placeholder= "What is the serving size"
         value={formData.servingSize}
         onChange={handleChange}
       />
       <input
         type="text"
-        name="description"        
+        name="description" 
+        className="input"       
         placeholder= "A bit about the recipe"
         value={formData.description}
         onChange={handleChange}
@@ -56,6 +62,7 @@ const Form = (props) => {
        <input
         type="number"
         name="cookTime"
+        className="input"
         placeholder= "What is the cooking time?"
         value={formData.cookTime}
         onChange={handleChange}
@@ -63,19 +70,22 @@ const Form = (props) => {
          <input
         type="text"
         name="ingredients"
-        placeholder= "what are the ingredients?"
+        className="input"
+        placeholder= "What are the ingredients?"
         value={formData.ingredients}
         onChange={handleChange}
       />
      <input
         type="text"
         name="instructions"
-        placeholder= "Cooking isntructions"
+        className="input"
+        placeholder= "Cooking instructions"
         value={formData.instructions}
         onChange={handleChange}
       />
-      <input type="submit" value={props.label} />
+      <input className="submit-btn" type="submit" value={props.label} />
     </form>
+    </div>
   );
 };
 

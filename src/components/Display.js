@@ -8,23 +8,56 @@ const Display = (props) =>{
     const loaded = () =>(
         <div style={{textAlign: "center"}}>
           {recipes.map((recipe) =>(
-            <div>
-              
-              <h1>{recipe.countryName}</h1>
+            <div className="recipe-display">
+
+              <div className="recipe"> 
+              <h3>{recipe.countryName}</h3>
+              </div>
+
+              <div className="recipe"> 
               <h3>{recipe.recipeName}</h3>
+              </div>
+
+              <div className="recipe"> 
               <h3>{recipe.servingSize} Serving(s)</h3>
-              <img src={recipe.image}></img>
-              <p>{recipe.description}</p>
+              </div>
+
+              <div className="recipe"> 
               <h3>{recipe.cookTime} minutes</h3>
+              </div>
+
+
+
+              <div className="descriptions">     
+              <p>{recipe.description}</p>
+              </div>
+
+    
+              <div className="image"> 
+              <img src={recipe.image}></img>
+              </div>
+
+              
+
+              <div className="ingredients"> 
               <h3>{recipe.ingredients}</h3>
+              </div>
+
+
+              <div className="instructions"> 
               <p>{recipe.instructions}</p>
-             
-              <button onClick={()=>{props.selectRecipe(recipe);
+              </div>
+
+              
+              <div className="bttns"> 
+              <button className ="ed-button" onClick={()=>{props.selectRecipe(recipe);
               props.history.push("/edit")}}> Edit</button>
       
-              <button onClick={()=>{props.deleteRecipe(recipe);
+              <button className ="ed-button" onClick={()=>{props.deleteRecipe(recipe);
             }}> Delete </button>
-            <hr />
+
+          </div>
+            {/* <hr /> */}
 
 
             </div>))}

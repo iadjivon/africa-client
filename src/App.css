@@ -37,24 +37,80 @@
   }
 }
 
-
-/* ------------------------------------------------- */
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */
 
+
+
+/* -------FONTS ---------*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&display=swap');
+/* ------------------------------------------------- */
+
+
+
+/* ------------- HEADER --------------- */
+
+header{
+  margin-bottom: 10px;
+  background-color: orange;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.headers{
+  width: 250px;
+  height: 40px;
+  margin: 10px;
+  font-size: 20px;
+  /* padding-bottom: 30px; */
+  background-color: #fdf8db;
+  border: none;
+}
+
+.headers:hover{
+background-color: #f1925e;
+}
+
+.headers-h1{
+  margin-left: 30px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 90px;
+  
+}
+
+.buttons{
+  padding-bottom: 5px;
+  margin-left: 15%;
+  margin-top: 55px;
+}
 
 /* -------------MAP--------------- */
 
 svg{
+  display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 100%;
+  /* margin: auto; */
+  width: 90%;
   height: 800px;
-  background-image: url("https://www.spicemountain.co.uk/wp-content/uploads/2019/10/general_544923805.jpg");
+  /* background-image: url("https://www.spicemountain.co.uk/wp-content/uploads/2019/10/general_544923805.jpg"); */
   background-repeat: none;
   background-size: cover;
+  opacity: 90%;
 
 }
+
+.svg{
+  background-image: url("https://scontent-bos3-1.cdninstagram.com/v/t51.2885-15/e35/74808610_496306927643100_6132064853400078915_n.jpg?_nc_ht=scontent-bos3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=mzhoOq1Aqr8AX-wB6Jg&tp=1&oh=6c266d916025e1c9942625a802707cdc&oe=60157ED6");
+  opacity: 80%;
+  background-color: #a4400e;
+}
+
 
 .country{
   fill: azure;
@@ -81,10 +137,45 @@ svg{
   /* padding-left: 50px; */
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+}
+
+.top-half{
+  background-image: url("");
+  background-repeat: none;
+  background-size: cover;
+  max-width: 47%;
+}
+/* https://scontent-bos3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/105946278_304368250596234_8340702325211335015_n.jpg?_nc_ht=scontent-bos3-1.cdninstagram.com&_nc_cat=106&_nc_ohc=mBjJlCeKQZwAX9CVtOT&tp=1&oh=14552213c04c32a14ee7812236e87c3f&oe=601314A0 */
+
+.top-half-text{
+  font-size: 110px;
+  padding-left: 40px;
+  color:rgb(82, 79, 79);
+  /* font-family: 'Dancing Script', cursive; */
+
 }
 
 
+/* --------------SPANS-------------- */
+.number3{
+  font-size: 140px;
+  color: orange;
+  margin-right: 15px;
+  font-family: 'Dancing Script', cursive; 
+  
+}
+
+.number4{
+  color:rgb(82, 79, 79);
+  font-family: 'Dancing Script', cursive; 
+  font-size: 75px;
+}
+
+/* --------------------- MAIN PAGE ------------------------ */
 /* -------------MAIN PAGE- DIV 2 - ACCORDION--------------- */
+
 .MuiPaper-root{
  width: 60%;
  margin: 5px;
@@ -109,8 +200,28 @@ svg{
   -webkit-box-shadow: 0 15px 10px #777;
   -moz-box-shadow: 0 15px 10px #777;
   box-shadow: 0 15px 10px #777;
-  
+}
 
+.main-page{
+  display:flex;
+  flex-direction: row;
+  margin-top: 10px;
+  flex-grow: inherit;
+}
+
+.main-h1 h1{
+  padding-left: 15px;
+  padding-right: 10px;
+  font-size: 60px;
+  color: orange;
+  font-weight: bold;
+ 
+
+}
+
+.main-h1 img{
+  display:flex;
+  margin-left: 10%;
 }
 
 .description{
@@ -132,43 +243,237 @@ svg{
 }
 
 .accordion-div{
-  background-image: url("https://cdn.minnesotamonthly.com/wp-content/uploads/sites/85/2019/06/mm-2019-07_GlobalTaste_UnionKitchen2_X.jpg");
+  background-image: url("https://i.pinimg.com/originals/57/51/ef/5751ef11fbb1097ea5313f80954e677a.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 10px;
   padding-bottom: 10px;
+
 
 }
 
 /* https://traveler.marriott.com/wp-content/uploads/2020/09/GI-904614534-AfricanFoodCulture.jpg */
 
 
+/* -------------MAIN PAGE- DIV 3 - GRID LIST--------------- */
+ .grid{
+   width: 45%;
+   height: 550px;
+   /* display: inline-flex; */
+   /* flex-wrap: nowrap; */
+   /* transform: translateZ(0); */
+   overflow: scroll;
+   flex-wrap: nowrap;
+   display: inline-block;
+   margin-right: 10px;
+
+ }
+
+.gridList{
+   list-style: none;
+   transform: translateZ(0);
+   display: inline-block;
+   flex-wrap: nowrap;
+   margin: auto;
+   
+ }
+
+ .gridList-item img{
+   display: flex;
+    margin-left: 5%;
+    padding: 5px;
+    max-width: 500px;
+    width: auto;
+    height: auto;
+    max-height: 425px;
+  
+}
+
+.gridList-item {
+  /* display: flex; */
+  /* margin: auto; */
+  margin-left: 35px;
+}
+
+.grid-text{
+  background-color: #a4400e;
+  width: 100%;
+}
+
+.grid-text-title{
+  font-size: 70px;
+  text-align: center;
+}
+
+.grid-text-title h1{
+  margin-bottom: 29px;
+  color:  #fdf8db;
+}
+
+
+.grid-text-para{
+  font-size: 26px;
+  text-align: center;
+  padding-left: 55px;
+  padding-right: 55px;
+  color:  orange;
+}
+
+
+.bloggers{
+  display: flex;
+  flex-direction: row;
+}
+
+hr{
+  width: 20%;
+  color: white;
+}
+
+/* ----------MAIN PAGE- DIV 4 - FOOD DISPLAY ------------ */
+.divs{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.one{
+  margin: 3px;
+  height: 20px;
+  background-color: #fdf8db;
+}
+
+.two{
+  margin: 3px;
+  height: 20px;
+  background-color: orange;
+}
+
+
+/* ----------MAIN PAGE- DIV 4 - FOOD DISPLAY ------------ */
+.input-div{
+  background-image: url("https://1.bp.blogspot.com/-UEwyuaaZowA/XGyUsJC80WI/AAAAAAABdTI/65vhRhh1_gw_2GggRKW1sVFTbt4EaTGVACLcBGAs/s1600/sq--peanut-chickpeas-african-recipes---IMG_9092.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input{
+  width: 450px;
+  height: 65px;
+  margin: 10px;
+  display: flex;
+  font-size: 18px;
+  padding: 10px;
+ 
+}
+
+.submit-btn{
+  width: 475px;
+  height: 65px;
+  display: flex;
+  font-size: 18px;
+  margin: 10px;
+  background-color: #fdf8db;
+  border: none;
+  font-size: 25px;
+}
+
+.submit-btn:hover{
+  background-color: #f1925e;
+
+}
+
+.ed-button{
+  width: 175px;
+  height: 45px;
+  font-size: 20px;
+  margin: 10px;
+  background-color: #fdf8db;
+  border: none;
+}
+
+.ed-button:hover{
+  background-color: #f1925e;
+}
+
+/* ------------------RECIPE DISPLAY --------------------- */
+.recipe-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+
+}
+
+.recipe{
+  margin: 30px;
+  width: 250px;
+  font-size: 25px;
+  border: 1px solid black;
+
+}
+
+.descriptions{
+  width: 75%;
+ 
+}
+
+.ingredients{
+  width: 75%;
+}
+
+.image img{
+  width: 450px;
+  height: 350px;
+}
+
+
+.instructions{
+  width: 75%;
+}
+
+.bttns{
+  display: flex;
+  
+}
+
+/* --------------------- FOOTER ------------------------- */
+
 .footer{
-  background-image: url("https://www.spicemountain.co.uk/wp-content/uploads/2019/10/general_544923805.jpg");
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
-}
+  color: white;
+ 
 
-.main-page{
-  display:flex;
+  display: flex;
   flex-direction: row;
-  flex: 1 2 auto
 }
 
+.footer1{
+  margin: 30px;
+  width: 30%;
+}
+
+.footer2{
+  margin: 30px;
+  width: 30%;
+}
+
+.footer3{
+  margin: 30px;
+  width: 30%;
+}
 
 
 .footerh1{
   /* padding: 0px; */
   margin-top: 8px;
   margin-bottom: 0px;
+  color: white;
   /* margin: 0px; */
 }
 
-.main-h1 h1{
-  padding: 5px;
-}
 
-.main-h1 img{
-  display:flex;
-  margin-left: 10px;
-}
+
+

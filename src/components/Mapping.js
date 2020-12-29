@@ -4,6 +4,7 @@ import {select, geoPath, geoMercator, path, svg }from 'd3'
 import data from './africa.geo.json'
 import * as d3 from 'd3'
 import Accordion from "./Accordion"
+import SingleLineGridList from './Imagelist'
 
 
 
@@ -59,22 +60,76 @@ svg.selectAll(".label")
 
 
 return (
-<div class ="map"> 
-    <div class ="map" style={{ padding: "" }}>
+<div class =""> 
+ <div class ="map"> 
+    <div className="svg">
     <svg ref={svgRef}></svg>
     </div>
-    
+
+
+    <div className="top-half">
+        <h1 className="top-half-text"> 
+            A flavorful excursion <br/> across the <span className="number3"> Continent. </span>  </h1>
+    </div>
+</div> 
+
+
 <div className="main-page">
     <div className="main-h1">
-        <h1> Recipes from across the continent </h1>
-        <img src="https://www.pikpng.com/pngl/b/181-1810057_wooden-spoon-png-wood-spoon-top-png-clipart.png" width="40px" height ="175px"/>
+        <h1> Recipes from across the <span className="number4"> Continent.</span> </h1>
+        {/* <img src="https://www.pikpng.com/pngl/b/181-1810057_wooden-spoon-png-wood-spoon-top-png-clipart.png" width="40px" height ="175px"/> */}
     </div>
 
     <div>
         <Accordion />
     </div>
+
+   
+  
 </div>
-    
+<br></br>
+    <div>
+        <SingleLineGridList />
+    </div>
+
+<div className="divs">
+    {/* FIRST */}
+        <div className="one">
+          
+        </div>
+
+    {/* SECOND */}
+        <div  className="two">
+           
+        </div>
+
+    {/* THIRD */}
+        <div className="one">
+            
+        </div>
+
+    {/* FOURTH */}
+        <div className="two">
+            
+        </div>
+
+    {/* FIFTH */}
+        <div className="one">
+           
+        </div>
+
+    {/* SIXTH */}
+        <div className="two">
+           
+        </div>
+
+    {/* SEVENTH */}
+        <div className="one">
+            
+        </div>
+
+</div>
+
 </div>
 
 

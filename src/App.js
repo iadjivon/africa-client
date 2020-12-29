@@ -6,6 +6,7 @@ import { Route, Link, Switch } from "react-router-dom";
 import Display from './components/Display';
 import Form from './components/Form';
 import Accordion from './components/Accordion'
+// import Header from './components/Header'
 
 // const decoratedOnClick = useAccordionToggle(eventKey, onClick);
 
@@ -23,7 +24,7 @@ const [recipes, setRecipes] = React.useState([])
 
 const emptyRecipe = ({
   countryName: "",
-  recipeInfo: [{
+    image: "",
     recipeName: "",
     cookTime: 0,
     description: "",
@@ -31,7 +32,7 @@ const emptyRecipe = ({
     ingredients: "",
     instructions: "", 
     recipesCompleted: Boolean
-  }]
+ 
   
 })
 
@@ -98,18 +99,22 @@ const handleUpdate = (recipe)=>{
 
 {/* THIS IS THE HEADER FOR ALL PAGES */}
   <header> 
-  <h1> African Recipes </h1>
- 
+    <div> 
+  <h1 className="headers-h1"> Fufu </h1>
+  </div>
+
+  <div className="buttons">
   <Link to="/">
-        <button>Home </button>
+        <button className="headers">Home </button>
   </Link>
   <Link to="/recipes">
-        <button>Explore Recipes </button>
+        <button className="headers">Explore Recipes </button>
   </Link>
   <Link to="/create">
-        <button>Add New Recipes </button>
+        <button className="headers">Add New Recipes </button>
   </Link>
-  <hr />
+  </div>
+
   </header>
 
 
@@ -119,7 +124,8 @@ const handleUpdate = (recipe)=>{
           <Map data={data} property={property}/> 
            }/>
 
-           <Route exact path ="/" render ={ ()=> <Accordion />} />
+           <Route exact path ="/" render ={ ()=> 
+           <Accordion />} />
 
         <Route
             exact
@@ -137,7 +143,7 @@ const handleUpdate = (recipe)=>{
             exact
             path="/create"
             render={(rp) => (
-              <Form {...rp} label="create" recipe={emptyRecipe} handleSubmit={handleCreate} />
+              <Form {...rp} label="Create" recipe={emptyRecipe} handleSubmit={handleCreate} />
             )}
           />
 
@@ -145,35 +151,31 @@ const handleUpdate = (recipe)=>{
             exact
             path="/edit"
             render={(rp) => (
-              <Form {...rp} label="update" 
+              <Form {...rp} label="Update" 
               recipe={selectedRecipe} 
               handleSubmit={handleUpdate} />
             )}
           />
 
-</Switch>
-
-
-
-
-{/*  THIS IS THE SECOND DIV ON THE MAIN PAGE. RIGHT UNDER THE MAP */}
-
-{/* <div> */}
-{/* <h1> Recipes from across the continent </h1> */}
-
-{/* <Accordion /> */}
-
-
-{/* </div> */}
-      
-           
+</Switch>         
 </main>
 
 {/* THIS IS THE FOOTER SECTION */}
 <footer className="footer">
-  <h1 className="footerh1"> this is a footer</h1>
-  <h1> this is a footer</h1>
-  <h1> this is a footer</h1>
+  <div className="footer1">
+  <h1 className="footerh1"> Resources</h1>
+  <h5> Instagram accounts</h5>
+  </div>
+
+  <div className="footer2">
+  <h1 className="footerh1"> Contacts</h1>
+  <h5> LinkedIn</h5>
+  <h5> Github</h5>
+  </div>
+
+  <div className="footer3">
+  <h1 className="footerh1"> Github</h1>
+  </div>
 </footer>
 
 </div>)
