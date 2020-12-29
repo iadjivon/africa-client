@@ -101,13 +101,13 @@ svg{
   /* background-image: url("https://www.spicemountain.co.uk/wp-content/uploads/2019/10/general_544923805.jpg"); */
   background-repeat: none;
   background-size: cover;
-  opacity: 90%;
+  /* opacity: 90%; */
 
 }
 
 .svg{
   background-image: url("https://scontent-bos3-1.cdninstagram.com/v/t51.2885-15/e35/74808610_496306927643100_6132064853400078915_n.jpg?_nc_ht=scontent-bos3-1.cdninstagram.com&_nc_cat=100&_nc_ohc=mzhoOq1Aqr8AX-wB6Jg&tp=1&oh=6c266d916025e1c9942625a802707cdc&oe=60157ED6");
-  opacity: 80%;
+  /* opacity: 80%; */
   background-color: #a4400e;
 }
 
