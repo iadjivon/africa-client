@@ -9,24 +9,24 @@ const Display = (props) =>{
         <div style={{textAlign: "center"}}>
           {recipes.map((recipe) =>(
             <div className="recipe-display">
-
-<div className="image"> 
+<Card> 
+           <div className="image"> 
+                <div className="recipe"> 
+               <h1>{recipe.recipeName}</h1>
+              </div>  
+               <div className="country-name"> 
+               <h3>{recipe.countryName}</h3>
+              </div>
+              
               <img src={recipe.image}></img>
               </div>
+              
               <div className="recipe"> 
-              <h3>Country Name: </h3> <h3>{recipe.countryName}</h3>
+              <h3> Serving Size:</h3> <p> {recipe.servingSize} Serving(s)</p>
               </div>
 
               <div className="recipe"> 
-              <h3> Recipe Name: </h3> <h3>{recipe.recipeName}</h3>
-              </div>
-
-              <div className="recipe"> 
-              <h3> Serving Size: </h3> <h3>{recipe.servingSize} Serving(s)</h3>
-              </div>
-
-              <div className="recipe"> 
-              <h3> Cook Time: </h3> <h3>{recipe.cookTime} minutes</h3>
+              <h3> Cook Time: </h3> <p>{recipe.cookTime} minutes</p>
               </div>
               <div className="ingredients"> 
               <h1>Recipe Ingredients:</h1> <p> {recipe.ingredients}</p>
@@ -51,12 +51,14 @@ const Display = (props) =>{
 
           </div>
             {/* <hr /> */}
-
+            </Card>
 
             </div>))}
+           
         </div>
-     
+
       )
+     
       const loading = <h1> Loading ... </h1>
 
     return recipes.length > 0 ? loaded() : loading

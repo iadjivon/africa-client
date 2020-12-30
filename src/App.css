@@ -112,6 +112,8 @@ svg{
 }
 
 
+
+
 .country{
   fill: azure;
   stroke: black;
@@ -388,7 +390,7 @@ hr{
   height: 45px;
   font-size: 20px;
   margin: 10px;
-  background-color: #fdf8db;
+  background-color: #f1925e;
   border: none;
 }
 
@@ -402,9 +404,27 @@ hr{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 15px;
+    background-color: #fdf8db;
+    width: 70%;
+    justify-content: center;
+    padding: 20px;
+
 
 }
 
+.country-name{
+color: #f1925e;
+font-size: 20px;
+padding-top: 0px;
+}
+
+p{
+  width: auto;
+  justify-content: center;
+}
+
+
+/* 
 .recipe{
   margin: 20px;
   width: 250px;
@@ -412,9 +432,9 @@ hr{
   border: 1px solid black;
   
 
-}
+} */
 
-.descriptions{
+/* .descriptions{
   width: 70%;
  
 }
@@ -432,10 +452,11 @@ hr{
 
 .instructions{
   width: 75%;
-}
+} */
 
 .bttns{
   display: flex;
+  justify-content: center;
 
 }
 

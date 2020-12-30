@@ -5,6 +5,7 @@ import data from './africa.geo.json'
 import * as d3 from 'd3'
 import Accordion from "./Accordion"
 import SingleLineGridList from './Imagelist'
+// import RecipeReviewCard from './recipesDisplay'
 
 
 
@@ -69,7 +70,7 @@ return (
 
     <div className="top-half">
         <h1 className="top-half-text"> 
-            A flavorful excursion <br/> across the <span className="number3"> Continent. </span>  </h1>
+            A culinary adventure <br/> across the <span className="number3"> Continent. </span>  </h1>
     </div>
 </div> 
 
@@ -90,6 +91,10 @@ return (
 <br></br>
     <div>
         <SingleLineGridList />
+    </div>
+
+    <div>
+        {/* <RecipeReviewCard /> */}
     </div>
 
 <div className="divs">
