@@ -178,7 +178,7 @@ const handleUpdate = (recipe)=>{
   </div>
   <div>
     <p> Made by Ida Adjivon</p>
-    <p> Copyright 2020. All rights reserved. </p>
+    <p> Copyright 2021. All rights reserved. </p>
   </div>
 </footer>
 

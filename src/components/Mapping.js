@@ -21,7 +21,6 @@ const Map = ({data, property}) =>{
     
 const features = 
 
-
 useEffect(() => {
     const svg = select(svgRef.current);
     const projection = geoMercator()
@@ -93,47 +92,7 @@ return (
         <SingleLineGridList />
     </div>
 
-    <div>
-        {/* <RecipeReviewCard /> */}
-    </div>
-
-<div className="divs">
-    {/* FIRST */}
-        <div className="one">
-          
-        </div>
-
-    {/* SECOND */}
-        <div  className="two">
-           
-        </div>
-
-    {/* THIRD */}
-        <div className="one">
-            
-        </div>
-
-    {/* FOURTH */}
-        <div className="two">
-            
-        </div>
-
-    {/* FIFTH */}
-        <div className="one">
-           
-        </div>
-
-    {/* SIXTH */}
-        <div className="two">
-           
-        </div>
-
-    {/* SEVENTH */}
-        <div className="one">
-            
-        </div>
-
-</div>
+   
 
 </div>
 
