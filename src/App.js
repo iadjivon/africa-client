@@ -122,7 +122,7 @@ const handleUpdate = (recipe)=>{
 
   <main> 
   <Switch>
-        <Route exact path ="/" render={ () => 
+        <Route exact path ="/" render={() => 
           <Map data={data} property={property}/> 
            }/>
 
