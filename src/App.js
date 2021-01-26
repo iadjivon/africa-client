@@ -179,7 +179,7 @@ const handleUpdate = (recipe)=>{
   <img src="https://www.clipartkey.com/mpngs/m/175-1750487_fork-knife-spoon-png-icon-knife-and-fork.png" width="120" height="auto"/> 
   </div>
   <div>
-    <p> Made by Ida Adjivon</p>
+    <p> designed and created by Ida Adjivon</p>
     <p> Copyright 2021. All rights reserved. </p>
   </div>
 </footer>
